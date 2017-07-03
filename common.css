@@ -1,0 +1,339 @@
+@charset "utf-8";
+
+html,body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	font: 14px "Microsoft YaHei", "微软雅黑", arial, sans-serif;
+	position: relative;
+	color: #333;
+}
+
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, article, aside, figure, footer, header, hgroup, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+* {
+	list-style: none;
+}
+
+.clear {
+	*zoom: 1
+}
+.hidden{
+	display: none;
+}
+
+.clear:before, .clear:after {
+	content: "";
+	display: table
+}
+
+.clear:after {
+	clear: both
+}
+
+.clearx: {
+	clear: both;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+a:focus,a:hover {
+	outline: none;
+	text-decoration: none;
+}
+
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 1000px white inset;
+	-webkit-text-fill-color: #333;
+}
+
+button,button:visited,button:active {
+	border: none
+}
+
+em,i {
+	font-style: normal
+}
+
+.overflow {
+	overflow: hidden;
+}
+.clearx{
+	clear:both;
+}
+/* float */
+.pr {
+	position: relative
+}
+
+.pa {
+	position: absolute
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.tl {
+	text-align: left
+}
+
+.tc {
+	text-align: center
+}
+
+.tr {
+	text-align: right
+}
+
+.hiden{
+    display:none;
+}
+
+/*nav*/
+/* --- 头部 --- */
+.fuheader {
+	width: 100%;
+	height: 2px;
+	background: #00bb90;
+	min-width: 1050px;
+}
+#header {
+	width: 100%;
+	background: #2f2f2f;
+}
+.nav {
+	width:100%;
+	height: 32px;
+	background: #2f2f2f;
+}
+
+.nav .nav_l {
+	padding: 6px 0
+}
+
+
+.nav .nav_r {
+	height: 32px;
+	border: none;
+	padding-right: 20px;
+}
+
+.nav_r .head_photo {
+	display: inline-block;
+	width: 20px;
+	height: 32px;
+	background: url('../images/sport_icon.png') no-repeat -179px -152px;
+	border: none;
+	margin-right:10px;
+}
+
+.nav .nav_l a {
+	display: inline-block;
+	padding: 0 20px;
+	font-size: 12px;
+	text-align: center;
+	color: #ebebeb;
+	border-left: 1px solid #000;
+	position: relative;
+}
+
+.nav .nav_r a.first_nav {
+	color: #ebebeb;
+}
+
+.nav .nav_l a:after {
+	content: '';
+	width: 1px;
+	height: 100%;
+	position: absolute;
+	left: 1px;
+	top: 0;
+	background: #3a3a3a;
+}
+.nav a:hover {
+	color: #01ba90;
+}
+.nav a.first_nav {
+	display: inline-block;
+	border-left: none;
+	line-height: 32px;
+}
+
+
+/*subtitle*/
+.mit_container {
+	width: 1200px;
+	margin: 0 auto;
+}
+.mit_subnav {
+	height: 60px;
+	width: 100%;
+	background: #01a87c;
+}
+
+.subnav_logo {
+	width: 164px;
+	height: 53px;
+	float: left;
+	margin-top: 4px;
+	background: url("../images/sport_icon.png") no-repeat 0 -73px;
+}
+
+.subnav_list {
+	margin-left: 190px;
+}
+
+.subnav_list li {
+	float: left;
+}
+
+.subnav_list li a {
+	padding: 0 24px;
+	height: 60px;
+	line-height: 60px;
+	color: #fff;
+	display: block;
+	font-size: 14px;
+}
+
+.subnav_list li a:hover,.subnav_list li.active a {
+	background: #029b72;
+	/*background: rgba(0,0,0,0.2);*/
+	color: #fff100;
+}
+
+.search_box{
+	position: relative;
+}
+.subnav_search {
+	display: inline-block;
+	width: 223px;
+	height: 28px;
+	float: right;
+	margin-right: 20px;
+	overflow: hidden;
+	margin-top: 16px;
+}
+
+.subnav_search input[name="search_infor"] {
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+	border-radius: 5px;
+	border: 1px solid #b7d9d0;
+	padding: 0 30px 0 5px;
+	outline: none;
+	display: block;
+	box-sizing: border-box;
+}
+
+.nav_searchbtn {
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	right: 7px;
+	top: 6px;
+}
+.mit_crumbs{
+	font-size: 12px;
+	line-height: 60px;
+	color:#999;
+}
+.main_nav{
+	color:blue;
+}
+.head_login{
+	line-height: 30px;
+	margin-right:10px;
+	border-right: 1px solid #282828;
+}
+.head_register{
+	padding-left: 10px;
+	border-left: 1px solid #131313;
+}
+a.head_login,a.head_register{
+	color: #fff;
+}
+.user_menu_box{
+	line-height: 30px;
+}
+.nav_menu{
+	line-height: 30px;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	min-width: 80px;
+}
+.user_slide{
+	position: absolute;
+	top: 30px;
+	left: 0;
+	z-index: 99;
+	background: #fff;
+	width: 100%;
+	display: none;
+}
+.user_slide li a{
+	padding:0 10px;
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+}
+audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel{
+	-webkit-appearance:none;background-color: rgba(0,0,0,0.5)!important;
+	-moz-appearance:none;background-color: rgba(0,0,0,0.5)!important;
+	-o-appearance:none;background-color: rgba(0,0,0,0.5)!important;
+	-ms-appearance:none;background-color: rgba(0,0,0,0.5)!important;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+	.mit_container {
+		width: 1000px;
+	}
+
+	.subnav_list li a {
+		padding: 0 14px;
+	}
+
+	.subnav_search {
+		width: 180px;
+		margin-right: 10px;
+	}
+
+	.mit_subnav {
+		width: 100%;
+		background: #01a87c;
+		min-width: 1000px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.mit_container {
+		width: 1000px;
+	}
+}
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>邮箱注册</title>
+	<link rel="stylesheet" type="text/css" href="common.css">
+	<link rel="stylesheet" type="text/css" href="TelphoneForm.css">
+</head>
+<body class="bg_color">
+
+<div class="mit_nav">
+	<div class="mit_container">
+		<div class="logo_box"><img src="../../images/video_test_img.jpg" width="100%"></div>
+		<h2 class="mit_navtitle pr">修改密码</h2>
+	</div>
+</div>
+<div class="mit_wrap">
+	<div class="mit_container form_container alter_container ">
+		<form action="" class="step_box telfirst_step ">
+			<div class="form_text">
+				<input type="text" class="fl" name="phone_number" placeholder="请输入手机号码">
+				<div class=" userform_icon phone_icon"></div>
+				<div class="normal_tips fl"><label id="phone_number-error" class="error" for="phone_number"></label></div>
+
+			</div>
+			<div class="form_text verify_box">
+				<div class="item_content fl">
+					<input type="text" name="phone_verify" placeholder="请输入右侧验证码">
+					<div class=" userform_icon verify_icon"></div>
+					<div class="verify_img"><img src="../../images/video_test_img.jpg" width="100%"></div>
+				</div>
+				<div class="normal_tips fl"><label id="phone_verify-error" class="error" for="phone_verify"></label></div>
+			</div>
+			<div class="form_text verify_box">
+				<div class="item_content fl">
+					<input type="text" name="message_verify" placeholder="请输入短信校验码">
+					<div class=" userform_icon message_icon"></div>
+					<div class="verify_img verify_message">获取短信验证码</div>
+				</div>
+				<div class="normal_tips fl"><label id="message_verify-error" class="error" for="message_verify"></label></div>
+			</div>
+			<div class="form_text form_nextbtn">
+				<input type="submit" name="next_step" class="form_btn form_submit" value="下一步" />
+			</div>
+		</form>
+		<div action="" class="step_box complate_box hidden">
+			<div class="success_img"></div>
+			<h3 class="success_tips">绑定手机成功！</h3>
+			<p class="complate_tips">
+				<span class="tips_label">您的绑定号为：</span>
+				<span class="tips_content define_green">1380013800</span>
+			</p>
+			<a href="javascript:void(0)" class="back_home">回到首页</a>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="jquery1.11.3.js"></script>
+<script type="text/javascript" src="jquery.validate.min.js"></script>
+<script type="text/javascript" src='TelphoneForm.js'></script>
+<script type="text/javascript" src='Telphone.js'></script>
+
+</body>
+</html>
